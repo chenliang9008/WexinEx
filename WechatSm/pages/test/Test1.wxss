@@ -1,0 +1,50 @@
+/* Test1.wxss */
+.viewStyle  {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #DCDCDC;
+  flex-direction: column;
+  border-bottom: thick dotted #ff0000;
+  border-width: 1rpx;
+  border-bottom-color: red;
+}
+
+.textViewStyle{
+   background: 'red'
+}
+
+.button-hover {
+  background-color: #1E90FF;
+  margin: 100rpx;
+}
+
+.itemViewStyle{
+  width: 100%;
+  height: 120rpx;
+  background:lightgrey;
+}
+
+.viewitem{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: royalblue;
+}
+
+.a{
+  float: left;
+  width: 100rpx;
+  background-color: red;
+  padding-left: 10rpx;
+}
+
+.b{
+  float: right;
+  width: 100rpx;
+  background-color: red;
+  text-align: right;
+  padding-right: 10rpx;
+}

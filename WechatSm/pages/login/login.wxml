@@ -1,0 +1,40 @@
+<block wx:if="{{loading}}">
+         <!-- <view wx:for-items="{{list}}"> {{item.leftTitle}} </view>
+
+         <view wx:for="{{[1,2,3]+''}}">{{item}}</view>
+
+         <view>{{message}}</view>
+          <view id="item-{{id}}"></view> -->
+
+<swiper indicator-dots="{{indicatorDots}}" width="100%"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+  style="indicator-color:red;indicator-active-color:blue;"
+  >
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" 
+      width="800" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<icon type="waiting" size="40"/>
+<icon type="success_no_circle" size="40"/>
+<progress percent="80" show-info />
+
+<view class='boadrd'>
+ <text class='boadrd-item'>正在上映</text>
+ <icon type="success_no_circle" size="40"/>
+</view>
+<loading hidden="{{hiddenLoading}}">正在加载</loading>
+
+</block> 
+     <block wx:else>
+      <view class="x" style="flex:auto;display:flex;flex-direction:column">
+          <view class="flex-item demo-text-1" style='justify-content:center;align-content:center;background:#ddd;color:red'>{{userName}}</view>
+          <view class="flex-item demo-text-2" style='flex:auto;display:flex;background:#fff;justify-content:center;align-content:center;'>12323322332323223</view>
+          <view class="flex-item demo-text-3" style='background:#ddd;'>3</view>
+
+          <view wx:for="{{list}}" wx:key="idx">{{item.leftTitle}}</view>
+        </view> 
+     </block>    

@@ -1,0 +1,9 @@
+<template name="movieTopItemView">
+   <view class="topItemViewStyle">
+      <text class="topItemTextStyle">{{categoryTitle}}</text>
+      <view>
+        <text class="topItemTextStyle">更多</text>
+        <image class="arrow-right-style" src="../images/arrow-right.png"/>
+      </view>
+   </view>
+</template>

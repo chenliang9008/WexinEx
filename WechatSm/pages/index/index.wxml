@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<import src="../template/DialogTemplate.wxml"/>
+
+<!--弹窗-->
+<template is="DialogTemplate" data="{{showModal}}"/>
+
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="textStyle" bindtap="testIcon">{{motto}}</text>
+    <text class="textStyle" bindtap="testPicker">Picker练习</text>
+
+    <text class="textStyle" bindtap="testCanvas">Canvas使用</text>
+    <text class="textStyle" bindtap="testHomePage">Home Page</text>
+    <text class="textStyle" bindtap="testZhiHuPage">ZhiHuPage</text>
+
+  </view>
+
+  <map 
+  class="mapStyle"
+  latitude="{{latitude}}" 
+  longitude="{{longitude}}"
+  scale="12"
+  show-location
+  markers="{{markers}}"
+  />
+
+  <view class="locationInfoStyle">
+     当前所有位置:{{currentAddress}}
+  </view>
+
+</view>

@@ -1,0 +1,33 @@
+<!--Test1.wxml-->
+<view>
+<!-- <button bindtap='testClick' class='button-hover'>测试点击</button> -->
+    <scroll-view
+      bindscrolltolower="lower"       
+      bindscrolltoupper="loadMore" 
+      bindscroll="scroll"
+      scroll-with-animation="true"
+      upper-threshold="10"
+      lower-threshold="10" 
+     >
+
+         <view wx:for="{{list}}" wx:key="{{item}}">
+               <view class='itemViewStyle'>{{item.itemName}}</view>
+         </view>
+         <view wx:if="{{loading}}" style='display:flex;width:100%;justify-content: center;'>
+            <text>没有更多了</text>
+         </view>
+
+
+         justify-content: space-between
+         <view class='viewitem'>
+             <view class='a'>
+                a
+             </view>
+             <view class='b'>
+                b
+             </view>
+         </view>
+         
+    </scroll-view>
+</view>
+

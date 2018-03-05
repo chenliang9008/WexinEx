@@ -1,0 +1,32 @@
+<view class="mContainer">
+    <view >
+       <image src='../images/logo.png' class="image"/>
+    </view>
+
+    <view class="item">
+       <view class="login-item">
+            <view class="login-item-info">用户名</view>
+            <view><input placeholder="请输入用户名" bindinput="inputUserName" placeholder-class="placeholder-text" maxlength="20"/></view>
+       </view>
+       
+       <view class="login-item">
+            <view class="login-item-info">密码</view>
+            <view class="login-pwd">
+               <view><input password="true" placeholder="请输入用户密码" bindinput="inputUserPwd" placeholder-class="placeholder-text" maxlength="6"/></view>
+               <text style="font-size:16px;color:#888;"> 忘记密码 </text>
+            </view>
+      </view>
+
+      <view class="login-item bottom">
+           <button class="login-btn" bindtap="loginAction">登录</button>
+      </view>
+    </view>
+
+    <view class="item bottom-info">
+          <view> 没有账户? <text> 注册 </text> </view>
+          <view class="wechat-icon">
+            <image src="../images/wechat.png"  />
+          </view>
+    </view>
+
+</view>

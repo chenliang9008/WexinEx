@@ -1,0 +1,10 @@
+@import "../template/MovieTopItemView.wxss";
+page{
+  background: lightgray;
+}
+
+.movieListViewStyle{
+  background: white;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}

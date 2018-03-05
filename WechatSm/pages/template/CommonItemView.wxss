@@ -1,0 +1,10 @@
+.textStyle{
+  background: red;
+  display: flex;
+}
+.mycellline{
+ background-color: lightgrey;
+ width: 700rpx;
+ height: 2rpx;
+ margin-top: 40rpx;
+}

@@ -1,0 +1,10 @@
+<view>
+     <view class="iconViewStyle">
+         <block wx:for="{{icons}}">
+              <view wx:key="{{index}}" class="innerIconStyle">
+                  <!-- <icon class="iconStyle" type="{{item}}" size="80"/> -->
+                  <image class="iconStyle" src="/pages/images/wechat.png" bindtap="itemImageView"/>
+              </view>
+         </block>
+      </view>
+</view>

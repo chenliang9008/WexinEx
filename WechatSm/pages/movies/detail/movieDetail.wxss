@@ -1,0 +1,66 @@
+page{
+  background: white;
+}
+.movieTitleStyle{
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+}
+.textRed{
+  color: red;
+  font-size: 18rpx;
+  margin-left: 40rpx;
+}
+.topMoviesInfo{
+  display: flex;
+  height: 300rpx;
+  width: 100%;
+}
+.movieImageStyle{
+  width: 180rpx;
+  height: 240rpx;
+  position: absolute;
+  top: 120rpx;
+  right: 20rpx;
+  border-radius: 10rpx;
+}
+
+.summaryViewStyle{
+  margin-top: 40rpx;
+  border-top: 1rpx solid lightgray;
+  display: flex;
+  flex-direction: column;
+}
+.leftTitle{
+  color: lightgray;
+  font-size: 14px;
+  margin-left: 40rpx;
+  margin-top: 40rpx;
+}
+
+.rightTitle{
+  font-size: 14px;
+}
+
+.contentTitle{
+  margin: 40rpx;
+  font-size: 14px;
+}
+
+.moiveStarStyle{
+  display:inline-flex;
+  flex-direction:column;
+  margin-left: 20rpx;
+  align-items: center;
+  justify-content: center;
+}
+.moiveStarStyle text{
+  font-size: 14px;
+  margin-top: 35rpx;
+}
+
+.imageScrollItemStyle{
+  width:180rpx;
+  height:240rpx;
+  margin-top:30rpx;
+  border-radius: 10rpx;
+}

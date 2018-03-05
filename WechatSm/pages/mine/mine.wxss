@@ -1,0 +1,10 @@
+.outContainerStyle{
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #DCDCDC;
+  flex-direction: column;
+  border-bottom: thick dotted #ff0000;
+  border-width: 1rpx;
+}

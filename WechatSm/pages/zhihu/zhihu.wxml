@@ -1,0 +1,36 @@
+<scroll-view
+    style="display: block; width:100%; height:{{scrollHeight}}rpx;"
+    scroll-y="true" 
+    upper-threshold="50" 
+    lower-threshold="50" 
+    bindscrolltolower="scrolltolower"
+    bindscrolltoupper="scrolltoupper"
+    >
+  
+  <view wx:for="{{stories}}" wx:for-item="item" wx:for-index="i" bindtap=''>
+     <view class="date-title-style">
+        <text class="date-item-style hot-box-title">{{stories[i].date}}</text>
+     </view>
+     <view wx:for="{{stories[i].stories}}" class="content-item">
+        <navigator url="zhihuDetail?id={{item.id}}">
+          <view class="content-item-view">
+              <image src="{{item.images[0]}}"/>
+              <text class="content-item-text">{{item.title}}</text> 
+          </view>
+          <view class="contentViewStyle">
+             <text class="content-item-text-sub">知乎日报</text>
+          </view>
+        </navigator>
+     </view>
+  </view>
+
+  <!-- 没有更多的时候 -->
+  <view hidden="{{hotshidden}}" class="hot-box-more">
+      <view wx:if="{{hothidden}}">
+            <image src="../images/loading.gif" mode="aspectFill"/> 
+      </view>
+      <view wx:else>
+          <text> 没有更多了 </text>
+      </view>
+  </view>
+</scroll-view>

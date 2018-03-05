@@ -1,0 +1,82 @@
+/* FlexView.wxss */
+
+.viewStyle{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: rebeccapurple
+}
+
+.pagesecetion1{
+ display:flex;
+ height: 180rpx;
+ width: 200rpx;
+ background-color:red;
+ align-items: center;   /*垂直居中*/
+ /*justify-content: center*/  /*水平居中*/
+}
+
+.pagesecetion2{
+ width: 300rpx;
+ display:flex;
+ height: 180rpx;
+ background-color:yellow;
+ align-items: center;   /*垂直居中*/
+ /*justify-content: center*/  /*水平居中*/
+}
+
+.pagesecetion3{
+  width: 300rpx;
+ display:flex;
+ height: 180rpx;
+ background-color:blue;
+ align-items: center;   /*垂直居中*/
+ /*justify-content: center*/  /*水平居中*/
+}
+
+.textStyle1{
+  color: whitesmoke;
+  align-items: center;
+  margin-left: 30rpx;
+}
+
+.buttonViewStyle{
+  display: flex;
+  height: 100rpx;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: gray;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.textStyle{
+  flex: 1;
+  margin-left: 30rpx;
+  background-color: white;
+  margin-right: 15rpx;
+}
+
+.btnStyle1{
+  width: 200rpx;
+  height: 80rpx;
+  margin-left: 20rpx;
+}
+
+.btnStyle2{
+ width: 200rpx;
+ height: 80rpx;
+ margin-right: 20rpx;
+}
+
+.imgStyle{
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 400rpx;
+}
+
+.data_v{
+  display: flex;
+  flex-direction: row;
+}

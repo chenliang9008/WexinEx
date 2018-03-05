@@ -1,0 +1,20 @@
+.topItemViewStyle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 88rpx;
+  align-items: center;
+  padding-left: 20rpx;
+  border-bottom:0.2px solid lightgray;
+}
+
+.topItemTextStyle{
+  font-size: 30rpx;
+}
+
+.arrow-right-style{
+  width: 25rpx;
+  height: 25rpx;
+  margin-left: 15rpx;
+  margin-right: 20rpx;
+}

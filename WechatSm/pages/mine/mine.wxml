@@ -1,0 +1,23 @@
+<import src="../template/CommonItemView.wxml"/>
+<view class="outContainerStyle">
+
+<template is="commonItemView" data="{{leftTitle:'免息券',isBottom:true,itemValue:'免息券'}}"/>
+
+<view style='margin-top:20rpx;'>
+   <template is="commonItemView" data="{{leftTitle:'零钱包',itemValue:'零钱包',rightTitle:'还剩29999元'}}"/>
+   <template is="commonItemView" data="{{leftTitle:'账单与还款',itemValue:'账单与还款'}}"/>
+   <template is="commonItemView" data="{{leftTitle:'交易记录',isBottom:true,itemValue:'交易记录'}}"/>
+</view>
+
+<view style='margin-top:20rpx;'>
+   <template is="commonItemView" data="{{leftTitle:'个人信息',isBottom:true,itemValue:'个人信息'}}"/>
+</view>
+
+<view style='margin-top:20rpx;'>
+   <template is="commonItemView" data="{{leftTitle:'个人设置',itemValue:'个人设置'}}"/>
+   <template is="commonItemView" data="{{leftTitle:'帮助反馈',itemValue:'帮助反馈'}}"/>
+   <template is="commonItemView" data="{{leftTitle:'账单与还款',itemValue:'账单与还款'}}"/>
+   <template is="commonItemView" data="{{leftTitle:'关于闪银',isBottom:true,itemValue:'关于闪银'}}"/>
+</view>
+
+</view>

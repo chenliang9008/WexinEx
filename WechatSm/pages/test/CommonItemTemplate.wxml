@@ -1,0 +1,3 @@
+<template name="CommonItemTemplate">
+      <icon type="success" size='40' style='margin-right:10rpx;'/>
+</template>

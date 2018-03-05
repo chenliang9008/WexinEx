@@ -1,0 +1,25 @@
+/* login.wxss */
+.flex-wrp {
+   color: 'red'
+}
+.x{
+   justify-content: 'center';
+   align-content: 'center';
+   background:#ddd
+}
+
+.slide-image{
+  width: 100%;
+  height: 360rpx;
+}
+
+.boadrd{
+  display: flex;
+  border: 1rpx solid #ddd;
+  margin: 10rpx;
+  align-items: center;
+}
+.boadrd-item{
+  flex: 1;
+  margin-left: 10rpx;
+}

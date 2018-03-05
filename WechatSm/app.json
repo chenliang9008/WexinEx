@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/zhihu/zhihu",
+    "pages/index/index",
+    "pages/test/Test1",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/test/FlexView",
+    "pages/web/CommonWeb",
+    "pages/mine/mine",
+    "pages/login/AppLogin",
+    "pages/flowlayout/flow",
+    "pages/picker/picker",
+    "pages/canvas/Circle",
+    "pages/home/home",
+    "pages/detail/Detail",
+    "pages/zhihu/zhihuDetail",
+    "pages/movies/movie",
+    "pages/movies/detail/movieDetail"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1E90FF",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "selectedIconPath": "pages/images/user_tag_class.png",
+        "iconPath": "pages/images/user_tag_class.png",
+        "pagePath": "pages/zhihu/zhihu",
+        "text": "新闻"
+      },
+      {
+        "selectedIconPath": "pages/images/user_tag_class.png",
+        "iconPath": "pages/images/user_tag_class.png",
+        "pagePath": "pages/movies/movie",
+        "text":"电影"
+      },
+      {
+        "selectedIconPath": "pages/images/user_tag_class.png",
+        "iconPath": "pages/images/user_tag_class.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}

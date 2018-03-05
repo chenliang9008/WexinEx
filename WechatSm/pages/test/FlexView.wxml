@@ -1,0 +1,65 @@
+<!--FlexView.wxml-->
+<import src ="template1.wxml"/>
+<import src ="CommonItemTemplate.wxml"/>
+
+<view class="viewStyle">
+
+ <icon type="cancel" size="40" color="red" bindtap='cancelEvent'/>
+
+<!--用户信息-->
+<text>{{userInfo}}</text>
+
+<view class="pagesecetion1">
+   <text class="textStyle1">1</text>
+</view>
+<view class="pagesecetion2">
+   <text class="textStyle1">2</text>
+</view>
+
+<view id="click" class="pagesecetion3" bindtap='clickMe' data-json="{text:aaa}">
+  <text class="textStyle1">3</text>
+</view>
+
+</view>
+
+<image class="imgStyle" src="{{imageUrl}}"/>
+
+<view class='buttonViewStyle' bindtap='clickView'>
+<!--button 按钮练习-->
+<button type='primary' loading='true' class='btnStyle1'>
+    button
+</button>
+<text class='textStyle'>1</text>
+<icon type="success" size='40' style='margin-right:10rpx;'/>
+</view>
+<!-- <progress percent='90' show-info='true' active='true' activeColor='red'/>
+<loading>正在加载...</loading> -->
+
+<block wx:if="{{length>5}}">
+  <view style='display:none'>length>5</view>
+</block>
+
+<view hidden='true' wx:for="{{newsData}}" class='data_v'>
+    <text> {{item.userName}}</text>
+</view>
+
+<!-- <template is="template" data="{{userName:userName,userPwd:userInfo}}"></template> -->
+
+<template is="CommonItemTemplate"></template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

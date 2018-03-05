@@ -1,0 +1,43 @@
+<import src="../../template/MovieDetailInfoView.wxml/"/>
+
+<view>
+
+ <!--影片信息-->
+  <view class="topMoviesInfo">
+     <view style="margin-top:30rpx;display:flex;flex-direction:column;">
+         <text class="movieTitleStyle">{{movieInfo.movieTitle}}</text>
+         <text class="contentTitle">{{movieInfo.country}}-{{movieInfo.year}}</text>
+         <view >
+            <text class="textRed">{{movieInfo.collect_count}}人喜欢</text>
+            <text class="textRed">{{movieInfo.comments_count}}条评论</text>
+         </view>
+     </view>
+
+     <image class="movieImageStyle" src="{{movieInfo.moviePic}}"/>
+  </view>
+
+  <template is="movieDetailInfoView" data="{{...movieInfo}}"/>
+  <!--剧情介绍-->
+  <view class="summaryViewStyle">
+     <text class="leftTitle">剧情介绍</text>
+     <text class="contentTitle">{{movieInfo.summary}}</text>
+  </view>
+
+  <!--影人-->
+  <view style="margin-right:15rpx;margin-bottom:40rpx;border-top: 1rpx solid lightgray;">
+    
+    <view style="margin-top:30rpx;margin-bottom:10rpx;">
+      <text class="leftTitle">影人</text>
+    </view>
+
+    <scroll-view scroll-x="true" style="width:100%;white-space:nowrap;">
+      <block wx:for="{{movieInfo.casts}}">
+          <view class="moiveStarStyle">
+              <image class="imageScrollItemStyle" src="{{item.avatars.large}}"/>
+              <text>{{item.name}}</text>
+          </view>
+      </block>
+    </scroll-view>
+  </view>
+
+</view>

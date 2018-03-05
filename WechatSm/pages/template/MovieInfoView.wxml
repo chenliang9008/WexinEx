@@ -1,0 +1,6 @@
+<template name="movieInfoView">
+   <view style="margin:15rpx;display:inline-flex;flex-direction:column;align-items: center;" bindtap="detailPage" data-movieId="{{movieId}}">
+       <image src="{{coverageUrl}}" style="width:200rpx;height:270rpx;border-radius:8rpx;"/>
+     <text style="font-size:12px;margin-top:10rpx;">{{title}}</text>
+   </view>
+</template>

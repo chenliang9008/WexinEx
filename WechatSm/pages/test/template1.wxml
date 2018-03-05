@@ -1,0 +1,8 @@
+<template name="template">
+   <view bindtap='templateItemSelected'>
+    {{userName}}
+   </view>
+    <view>
+    {{userPwd}}
+   </view>
+</template>

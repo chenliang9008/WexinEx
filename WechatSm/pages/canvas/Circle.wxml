@@ -1,0 +1,5 @@
+<view class="outContainerStyle"> 
+    <canvas class="canvasStyle" 
+    style="width:120px; height:120px;" canvas-id="canvasArc"/>
+    <view class="progressTextStyle">{{progressText}}%</view>
+</view>

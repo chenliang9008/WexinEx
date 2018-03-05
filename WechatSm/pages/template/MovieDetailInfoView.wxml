@@ -1,0 +1,22 @@
+<template name="movieDetailInfoView">
+   <view>
+      <view class="movieTitleStyle">
+        <text>{{movieTitle}}</text>
+      </view>
+      
+      <view class="leftTitle">
+         <text >评分</text><text style="color:black;margin-left:20rpx;">{{average}}</text>
+      </view>
+
+      <view class="leftTitle">
+         <text>导演</text><text style="color:black;margin-left:20rpx;">{{directorsName}}</text>
+      </view>
+
+      <view class="leftTitle">
+         <text>影人</text><text style="color:black;margin-left:20rpx;">{{moviePersons}}</text>
+      </view>
+      <view class="leftTitle">
+         <text>类型</text><text style="color:black;margin-left:20rpx;">{{movieGenres}}</text>
+      </view>
+   </view>
+</template>
